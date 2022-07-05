@@ -17,24 +17,17 @@ set undofile
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-call plug#begin()
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-file-browser.nvim'
+lua require('plugins')
+lua require('mappings')
 
-Plug 'nvim-lualine/lualine.nvim'
-
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'lewis6991/gitsigns.nvim'
-
-Plug 'tpope/vim-surround'
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-Plug 'dracula/vim', { 'as': 'dracula' }
-call plug#end()
-
+nnoremap th :tabfirst<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnew<CR>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
 
 colorscheme dracula
 
@@ -64,10 +57,6 @@ lua << EOF
     }
   }
 EOF
-
-" Language Server Protocol
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
 
 lua << END
   require('lualine').setup()
