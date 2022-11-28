@@ -6,12 +6,12 @@ set noswapfile
 set number
 set numberwidth=4
 set mouse=a
-set relativenumber
-set signcolumn=yes
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set termguicolors
+" set relativenumber
+" set signcolumn=yes
+" set tabstop=2
+" set shiftwidth=2
+" set expandtab
+"set termguicolors
 set undofile
 
 nnoremap <SPACE> <Nop>
