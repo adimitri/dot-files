@@ -29,6 +29,8 @@ return packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use("tpope/vim-surround")
+
   -- Keep this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
