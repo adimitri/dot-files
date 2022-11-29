@@ -11,7 +11,21 @@ end
 
 local packer_bootstrap = ensure_packer()
 
-return require('packer').startup(function(use)
+-- Autocommand that reloads neovim and installs/updates/removes plugins
+-- whent this file is saved
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+  augroup end
+]])
+
+local status, packer = pcall(require, "packer")
+if not status then
+  return
+end
+
+return packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
