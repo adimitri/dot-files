@@ -53,6 +53,15 @@ return packer.startup(function(use)
   -- statusline
   use("nvim-lualine/lualine.nvim")
 
+  -- fuzzy finding w/ telescope
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+  use({ 
+    "nvim-telescope/telescope.nvim",
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
+  })
+
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
