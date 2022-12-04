@@ -37,6 +37,8 @@ return packer.startup(function(use)
 
   use("tpope/vim-surround")
 
+  use("numToStr/Comment.nvim")
+
   -- file explorer
   use({
     "nvim-neo-tree/neo-tree.nvim",
