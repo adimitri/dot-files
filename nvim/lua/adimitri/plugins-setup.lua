@@ -31,6 +31,14 @@ return packer.startup(function(use)
 
   use("tpope/vim-surround")
 
+  -- file explorer
+  use {
+    "nvim-tree/nvim-tree.lua",
+    requires = {
+      "nvim-tree/nvim-web-devicons",
+    },
+  }
+
   -- Keep this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
