@@ -38,12 +38,15 @@ return packer.startup(function(use)
   use("tpope/vim-surround")
 
   -- file explorer
-  use {
-    "nvim-tree/nvim-tree.lua",
+  use({
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
     requires = {
+      "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
     },
-  }
+  })
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
