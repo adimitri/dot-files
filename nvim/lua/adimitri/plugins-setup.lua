@@ -50,6 +50,9 @@ return packer.startup(function(use)
     },
   })
 
+  -- statusline
+  use("nvim-lualine/lualine.nvim")
+
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
