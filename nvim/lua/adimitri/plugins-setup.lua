@@ -29,6 +29,8 @@ return packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use("szw/vim-maximizer") -- maximizes and restores current window
+
   use("tpope/vim-surround")
 
   -- file explorer
