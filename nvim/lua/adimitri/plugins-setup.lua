@@ -35,7 +35,7 @@ return packer.startup(function(use)
 
   use("szw/vim-maximizer") -- maximizes and restores current window
 
-  use("tpope/vim-surround")
+  use("tpope/vim-surround") -- add, delete, change surrounding text
 
   use("numToStr/Comment.nvim")
 
