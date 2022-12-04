@@ -31,6 +31,8 @@ return packer.startup(function(use)
 
   use({ "dracula/vim", as = "dracula" })
 
+  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+
   use("szw/vim-maximizer") -- maximizes and restores current window
 
   use("tpope/vim-surround")
