@@ -1,0 +1,5 @@
+brew "neovim"
+brew "tmux"
+brew "lazygit"
+brew "ripgrep"
+brew "node"
