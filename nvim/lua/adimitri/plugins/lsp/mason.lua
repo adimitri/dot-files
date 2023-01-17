@@ -17,7 +17,6 @@ mason.setup()
 
 mason_lspconfig.setup({
 	ensure_installed = {
-		"ruby_ls",
 		"sorbet",
 		"rust_analyzer",
 		"html",

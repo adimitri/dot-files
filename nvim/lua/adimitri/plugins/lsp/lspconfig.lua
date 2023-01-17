@@ -32,11 +32,6 @@ end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
-lspconfig["ruby_ls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 lspconfig["sorbet"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
