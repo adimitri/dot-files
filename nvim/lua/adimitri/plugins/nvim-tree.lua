@@ -9,7 +9,7 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup({
-      vim = {
+      view = {
         width = 35,
         relativenumber = true,
       },
@@ -21,6 +21,8 @@ return {
         icons = {
           glyphs = {
             folder = {
+              arrow_closed = "", -- arrow when folder is closed
+              arrow_open = "", -- arrow when folder is open
             },
           },
         },
